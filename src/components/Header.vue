@@ -1,27 +1,16 @@
 <template>
-  <div id="app">
-  <Header/>
-    <h1> startpage </h1>
-  </div>
+    <div id="header"> this is aho header. </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
 
 export default {
-  name: 'App', //Javaでいうクラス名
-  // data: {
-  //   message: "aho",
-  // },
-  components: {
-    Header,
-  },
-
+  name: 'Header',
 }
 </script>
 
 <style>
-#app {
+#header {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
