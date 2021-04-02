@@ -1,18 +1,18 @@
 <template>
-    <div id="header"> 
-      this is aho header. 
-      <HeaderColumn/>
+    <div id="Headercolumn"> 
+      <h1>aho</h1>
     </div>
 </template>
 
 <script>
-import HeaderColumn from '@/components/HeaderColumn.vue'
 
 export default {
-  name: 'Header',
-  components:{
-    HeaderColumn,
-  }
+  name: 'HeaderColumn',
+  data () {
+    return {
+      number: 5,
+    };
+  },
 }
 </script>
 
@@ -22,7 +22,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: green;
+  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

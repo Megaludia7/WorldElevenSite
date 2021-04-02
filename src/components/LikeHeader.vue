@@ -1,7 +1,8 @@
 <template>
     <div id="header"> 
       this is aho header. 
-      <HeaderColumn/>
+      <HeaderColumn name="aho"/>
+      <HeaderColumn name="ahぼけo"/>
     </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: green;
+  color: #2c3e50;
   margin-top: 60px;
 }
 </style>

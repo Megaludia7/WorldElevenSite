@@ -2,11 +2,14 @@
   <div id="app">
   <Header/>
     <h1> startpage </h1>
+    <LikeNumber/>
+    <LikeNumber/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
+import LikeNumber from '@/components/LikeNumber.vue'
 
 export default {
   name: 'App', //Javaでいうクラス名
@@ -14,7 +17,7 @@ export default {
   //   message: "aho",
   // },
   components: {
-    Header,
+    Header,LikeNumber,
   },
 
 }
