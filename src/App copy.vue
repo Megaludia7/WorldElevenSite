@@ -1,23 +1,24 @@
 <template>
   <div id="app">
-    aho
-    <process-flow/>
-    ahoend
+  <Header/>
+    <h1> startpage </h1>
+    <LikeNumber/>
+    <LikeNumber/>
   </div>
 </template>
 
 <script>
-import ProcessFlow from '@/components/ProcessFlow.vue';
+import Header from '@/components/Header.vue'
+import LikeNumber from '@/components/LikeNumber.vue'
 
 export default {
   name: 'App', //Javaでいうクラス名
   components: {
-    ProcessFlow,
+    Header,LikeNumber,
   },
 
 }
 </script>
-
 
 <style>
 #app {
@@ -27,6 +28,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: aqua;
 }
 </style>
