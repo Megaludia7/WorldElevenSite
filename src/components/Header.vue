@@ -1,7 +1,9 @@
 <template>
     <div id="header"> 
-      this is aho header. 
-      <HeaderColumn/>
+      <h2>this is aho header.</h2> 
+      <HeaderColumn title="データ受け渡し"/>
+      <!-- <HeaderColumn title="縦並び"/> -->
+      <HeaderColumn title="横並び"/>
     </div>
 </template>
 
@@ -18,11 +20,14 @@ export default {
 
 <style>
 #header {
+  position: relative;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: green;
-  margin-top: 60px;
+  color: white;
+  background-color: red;
+  margin: 20px 80px 20px 80px;
+  padding: 12px 0px 12px 0px;
 }
 </style>

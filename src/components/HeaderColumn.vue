@@ -1,6 +1,6 @@
 <template>
-    <div id="Headercolumn"> 
-      <h1>aho</h1>
+    <div id="header-column"> 
+      <p>{{title}}</p>
     </div>
 </template>
 
@@ -13,16 +13,20 @@ export default {
       number: 5,
     };
   },
+  props: ["title"],
 }
 </script>
 
 <style>
-#header {
+#header-column {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  background-color: blueviolet;
+  margin: 0px 4px;
+  display: inline-block;
+
 }
 </style>
