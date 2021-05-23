@@ -3,7 +3,7 @@
       いいね({{number}})
       <button @click="increment">1足せ</button>
       いいね({{number}})
-      <button @click="increment">1足せ</button>
+      <button @click="decrement">1減らせ</button>
     </div>
 </template>
 
@@ -19,6 +19,9 @@ export default {
   methods: {
     increment() {
       this.number += 1
+    },
+    decrement() {
+      this.number -= 1
     }
   },
 }
