@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>aho</title>
+    <script type="text/javascript">
+      function PushButton() {
+        alert(document.ahoForm.hiddenParam.value);
+      }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+      <!-- フォームの生成 -->
+      <form action="./aho.html" method="GET" name="ahoForm">
+      <!-- 通常actionはソースの位置 -->
+          <input type="text" name="aho" placeholder="あほ">
+          <input type="button" name="makeAlert" onclick="return PushButton()" value="This is alert">
+          <input type="hidden" name="hiddenParam" value="hiddenValue">
+          <input type="submit" value="This is submit">
+          <input type="number" name="number">
+          <!-- イベントオブジェクトでsubmitする必要がある -->
+      </form> 
+  </div>
+  </body>
+</html>

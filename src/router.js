@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import MainMenu from './views/MainMenu.vue'
-import Routing from './views/Routing.vue'
+import EasyCalc from './views/EasyCalc.vue'
 //
 // 他のコンポーネントは省略
 //
@@ -23,9 +23,9 @@ export default new Router({
     // 省略
     //
     {
-      path: '/routing',
-      name: 'routing',
-      component: Routing 
+      path: '/EasyCalc',
+      name: 'EasyCalc',
+      component: EasyCalc 
     }
   ]
 })
