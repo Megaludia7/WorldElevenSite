@@ -12,6 +12,8 @@
         <li><router-link to="/EasyCalc">計算の練習</router-link></li>
       </ul>
     </div>
+
+    <!-- routerのJavaScriptを適応させる. 動的に/#/や/#/EasyCalcになる -->
     <router-view />
   </div>
 </template>
