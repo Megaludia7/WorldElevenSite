@@ -1,6 +1,7 @@
 <template>
     <div id="header-column"> 
       <p>{{title}}</p>
+      <h3> {{number}} </h3>
     </div>
 </template>
 

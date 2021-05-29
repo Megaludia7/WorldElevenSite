@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>ahomenu</h1>
-    <a href="/EasyCalc">計算の練習fromメニュー</a>
+      <ul class="tab-menu-base">
+        <li><router-link to="/EasyCalc">計算の練習from MainMenu</router-link></li>
+      </ul>
   </div>
 </template>
 

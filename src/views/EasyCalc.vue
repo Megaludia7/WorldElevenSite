@@ -1,9 +1,15 @@
 <template>
   <div id="EasyCalc">
     <h1>aho </h1>
-    <button v-on:click="PlusNumber">１個たす</button>
-    <button v-on:click="MinusNumber">１個引く</button>
-    <p> {{number}} </p>
+    <div class="subcss">
+      <button v-on:click="PlusNumber(2)">2個たす</button>
+      <button v-on:click="MinusNumber">１個引く</button>
+      <p> {{number}} </p>
+    </div>
+    <p v-on:mousemove="CheckEvent(2, $event)">イベントに関する全ての情報が入っているオブジェクト(今回はmousemoveでイベントを起こす.(clickの場合はclickでイベントが発火する)
+      <span v-on:mousemove.stop>ここでは反応しない</span>
+    </p>
+    <p>{{x}} and {{fixedVal}}</p>
   </div>
 </template>
 
@@ -15,15 +21,21 @@ export default {
   },
   data : function() {
       return {
-        number : 1
+        number : 1,
+        x: 0
       }
     },
   methods : {
-    PlusNumber: function() {
-      this.number += 1
+    PlusNumber: function(times) {
+      this.number += 1*times
     },
     MinusNumber:function() {
       this.number -= 1
+    },
+    CheckEvent: function(inputNumber, event) {
+      // console.log(event)
+      this.x = event.clientX;
+      this.fixedVal = inputNumber;
     }
   }
 }
@@ -31,7 +43,7 @@ export default {
 
 
 <style>
-#EasyCalc {
+.subcss {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,13 +53,14 @@ export default {
   margin-top: 60px;
   background-color: aqua;
 }
-.Centre{
+#EasyCalc{
+  width:100%;
+  margin-right: 80%;
   text-align: center;
+  background-color: whitesmoke;
+
 }
 .Eighty{
-  width:100%;
-  margin-left: 80%;
   color: black;
-  background-color: blue;
 }
 </style>

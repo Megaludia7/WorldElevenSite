@@ -1,13 +1,18 @@
 <template>
   <div id="home">
-  <a href="./Menu.html">ホーム画面</a>
+  <h1>ホーム画面</h1>
+  <Header/>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
 
 export default {
   name: 'Home', //Javaでいうクラス名
+  components: {
+    Header
+  }
 }
 </script>
 
