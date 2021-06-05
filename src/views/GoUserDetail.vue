@@ -1,7 +1,8 @@
 <template>
   <div id="GoUserDetail">
     <h1>UserDetailへの遷移</h1>
-    <input type="number" name="UserId"/>
+    <input type="number" v-model="UserId" value="3">
+    <p> {{UserId}} </p>
     <button v-on:click="GetUserId()">ahoaho</button>
     <button v-on:click="GoToUserDetail()">User1へ</button>
   </div>
