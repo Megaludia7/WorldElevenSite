@@ -2,7 +2,6 @@
     <div id="header"> 
       <h2>this is aho header.</h2> 
       <HeaderColumn title="データ受け渡し"/>
-      <!-- <HeaderColumn title="縦並び"/> -->
       <HeaderColumn title="横並び"/>
     </div>
 </template>

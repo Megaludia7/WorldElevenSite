@@ -23,9 +23,6 @@ export default new Router({
       name: 'mainmenu',
       component: MainMenu
     },
-    //
-    // 省略
-    //
     {
       path: '/EasyCalc',
       name: 'EasyCalc',
