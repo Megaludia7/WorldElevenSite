@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainMenu from './views/MainMenu.vue'
 import EasyCalc from './views/EasyCalc.vue'
+import Login from './views/Login.vue'
 import Home from './views/Home.vue'
 import UserDetail from './views/UserDetail.vue'
 import GoUserDetail from './views/GoUserDetail.vue'
@@ -34,6 +35,11 @@ export default new Router({
       path: '/Home',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/Login',
+      name: 'Login',
+      component: Login
     },
     {
       path: '/GoUserDetail',

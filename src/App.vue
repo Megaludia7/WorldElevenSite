@@ -11,6 +11,7 @@
         <!-- *** -->
         <li><router-link to="/EasyCalc">計算の練習</router-link></li>
         <li><router-link to="/Home">Home画面</router-link></li>
+        <li><router-link to="/Login">Login画面</router-link></li>
         <li><router-link to="/Users/1">User画面</router-link></li>
         <li><router-link to="/GoUserDetail">User以降画面へ</router-link></li>
       </ul>
